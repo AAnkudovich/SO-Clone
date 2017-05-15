@@ -1,0 +1,33 @@
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ask a Question</title>
+</head>
+{% include 'header.html' %}
+<body>
+<div class="container">
+    {% for q in questions %}
+      <div class="col-sm-12">
+        <div class="col-sm-3 col-md-3 col-lg-3 pull-right">
+        <div class="alert alert-info col-sm-4 col-md-4 col-lg-4 text-center">
+            <div >{{ q.answerNo }}</div>
+            <div >answers</div>
+          </div>
+          <div class="alert alert-info col-sm-4 col-md-4 col-lg-4 text-center">
+            <div >{{ q.views }}</div>
+            <div >views</div>
+          </div>
+          </div>
+        <h1><a href="/ask-ezylia/{{q.slug}}">{{ q.subject }}</a></h1>
+
+        
+      </div>
+      
+      {% endfor %}
+      </div>
+</body>
+</div>
+</html>

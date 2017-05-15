@@ -1,0 +1,8 @@
+Flask==0.10.1
+Flask-SQLAlchemy==2.1
+SQLAlchemy==1.0.10
+mysql-python
+python-slugify
+wtforms
+flask_wtf
+flask_bootstrap
